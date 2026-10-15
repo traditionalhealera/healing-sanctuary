@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancestral Healing Sanctuary | Authentic African Traditional & Remote Healing</title>
+
+    <!-- GOOGLE ANALYTICS 4 (GA4) INTEGRATION -->
+    <!-- Replace 'G-PLACEHOLDER_ID' below with your real Google Analytics Measurement ID (e.g. G-A1B2C3D4E5) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      // Configure GA4
+      gtag('config', 'G-PLACEHOLDER_ID', {
+        'send_page_view': true
+      });
+
+      // Helper function to track custom conversion events (e.g., WhatsApp button clicks)
+      function trackWhatsAppClick(sourceLabel) {
+        if (typeof gtag === 'function') {
+          gtag('event', 'whatsapp_click', {
+            'event_category': 'Engagement',
+            'event_label': sourceLabel
+          });
+        }
+      }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sanctuary: {
+                            mahogany: '#2C1810',
+                            terracotta: '#8B4513',
+                            gold: '#D4AF37',
+                            goldHover: '#B59226',
+                            sage: '#4A5D4E',
+                            sand: '#F7F4EF',
+                            sandDark: '#EAE3D9',
+                            darkBg: '#1A0F0A',
+                            cardBg: '#23150F',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom scrollbar & luxury styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1A0F0A;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #8B4513;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF0C2 0%, #D4AF37 50%, #997A15 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-glow {
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+        }
+        .floating-wa {
+            animation: pulse-glow 2s infinite;
+        }
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+            70% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+    </style>
+</head>
+<body class="bg-sanctuary-darkBg text-sanctuary-sand font-sans antialiased selection:bg-sanctuary-gold selection:text-sanctuary-darkBg">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-sanctuary-mahogany border-b border-sanctuary-gold/20 py-2 px-4 text-center text-xs md:text-sm font-medium tracking-wide text-sanctuary-gold/90">
+        <span class="inline-flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            Global Virtual Consultations Open 24/7 for Africa, Europe, Americas & Worldwide | 100% Strictly Confidential
+        </span>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <nav class="sticky top-0 z-40 bg-sanctuary-darkBg/95 backdrop-blur-md border-b border-sanctuary-gold/15 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-full border border-sanctuary-gold/40 flex items-center justify-center bg-sanctuary-mahogany group-hover:border-sanctuary-gold transition-colors">
+                        <i class="fa-solid font-serif text-sanctuary-gold text-lg">🌿</i>
+                    </div>
+                    <div>
+                        <span class="font-serif text-lg md:text-xl font-bold tracking-wider text-sanctuary-sand group-hover:text-sanctuary-gold transition-colors block leading-tight">
+                            ANCESTRAL HEALING
+                        </span>
+                        <span class="text-[10px] tracking-widest text-sanctuary-gold/70 uppercase block">Sanctuary Uganda</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-sanctuary-sand/80">
+                    <a href="#about" class="hover:text-sanctuary-gold transition-colors">About Healer</a>
+                    <a href="#services" class="hover:text-sanctuary-gold transition-colors">Services</a>
+                    <a href="#how-it-works" class="hover:text-sanctuary-gold transition-colors">Remote Consultations</a>
+                    <a href="#calculator" class="hover:text-sanctuary-gold transition-colors">Estimator & Booking</a>
+                    <a href="#testimonials" class="hover:text-sanctuary-gold transition-colors">Stories</a>
+                    <a href="#faq" class="hover:text-sanctuary-gold transition-colors">FAQ</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden lg:flex items-center">
+                    <a href="https://wa.me/256774855463?text=Hello%2C%20I%20would%20like%20to%20book%20a%20private%20and%20confidential%20spiritual%20consultation." 
+                       target="_blank"
+                       class="inline-flex items-center gap-2 bg-emerald-700 hover:bg-emerald-600 text-white text-xs md:text-sm font-semibold px-5 py-2.5 rounded-full border border-emerald-500/40 shadow-lg hover:shadow-emerald-900/30 transition-all transform hover:-translate-y-0.5">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>WhatsApp Consult</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="p-2 rounded-md text-sanctuary-sand hover:text-sanctuary-gold focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Container -->
+        <div id="mobile-menu" class="hidden md:hidden bg-sanctuary-cardBg border-b border-sanctuary-gold/20 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:bg-sanctuary-mahogany hover:text-sanctuary-gold">About Healer</a>
+            <a href="#services" class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:bg-sanctuary-mahogany hover:text-sanctuary-gold">Services</a>
+            <a href="#how-it-works" class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:bg-sanctuary-mahogany hover:text-sanctuary-gold">Remote Consultations</a>
+            <a href="#calculator" class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:bg-sanctuary-mahogany hover:text-sanctuary-gold">Fee Estimator</a>
+            <a href="#testimonials" class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:bg-sanctuary-mahogany hover:text-sanctuary-gold">Testimonials</a>
+            <a href="#faq" class="mobile-link block px-3 py-2 rounded-md text-base font-medium hover:bg-sanctuary-mahogany hover:text-sanctuary-gold">FAQ</a>
+            <a href="https://wa.me/256774855463?text=Hello%2C%20I%20would%20like%20to%20book%20a%20private%20consultation." 
+               target="_blank"
+               class="w-full flex items-center justify-center gap-2 bg-emerald-700 hover:bg-emerald-600 text-white font-semibold py-3 rounded-xl mt-4">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>WhatsApp: +256774855463</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-[90vh] flex items-center justify-center py-20 overflow-hidden bg-gradient-to-b from-sanctuary-darkBg via-sanctuary-mahogany/40 to-sanctuary-darkBg">
+        <!-- Subtle Pattern Background -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
+        
+        <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-sanctuary-gold/30 bg-sanctuary-mahogany/80 text-sanctuary-gold text-xs sm:text-sm font-medium mb-8">
+                <i class="fa-solid fa-hands-praying"></i>
+                <span>Authentic Ancestral Guidance & Root Herbology</span>
+            </div>
+
+            <!-- Main Title -->
+            <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-sanctuary-sand mb-6 leading-tight">
+                Bridging Sacred <span class="gold-gradient-text">African Ancestral Wisdom</span> with Global Spiritual Healing
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="max-w-3xl mx-auto text-base sm:text-lg lg:text-xl text-sanctuary-sand/80 font-light mb-10 leading-relaxed">
+                Clear spiritual blockages, protect your family and enterprise, and restore lifelong alignment through traditional herbal remedies and sacred divination. Serving clients in Uganda, across Europe, the Americas, and worldwide with 100% strict confidentiality.
+            </p>
+
+            <!-- CTA Group -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+                <a href="https://wa.me/256774855463?text=Hello%20Elder%2C%20I%20am%20reaching%20out%20to%20book%20a%20confidential%20consultation." 
+                   target="_blank" 
+                   class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-base px-8 py-4 rounded-xl shadow-xl hover:shadow-emerald-900/40 transition-all transform hover:-translate-y-1">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    <span>Book WhatsApp Consultation</span>
+                </a>
+
+                <a href="#calculator" 
+                   class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-sanctuary-mahogany/80 hover:bg-sanctuary-terracotta text-sanctuary-sand font-semibold text-base px-8 py-4 rounded-xl border border-sanctuary-gold/30 hover:border-sanctuary-gold transition-all">
+                    <i class="fa-solid fa-calculator text-sanctuary-gold"></i>
+                    <span>View Fees & Services</span>
+                </a>
+            </div>
+
+            <!-- Trust Markers -->
+            <div class="mt-16 pt-10 border-t border-sanctuary-gold/10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-3">
+                    <div class="text-2xl font-serif text-sanctuary-gold font-bold">100%</div>
+                    <div class="text-xs text-sanctuary-sand/70 mt-1 uppercase tracking-wider">Confidential & Private</div>
+                </div>
+                <div class="p-3">
+                    <div class="text-2xl font-serif text-sanctuary-gold font-bold">Global</div>
+                    <div class="text-xs text-sanctuary-sand/70 mt-1 uppercase tracking-wider">Remote Virtual Sessions</div>
+                </div>
+                <div class="p-3">
+                    <div class="text-2xl font-serif text-sanctuary-gold font-bold">Ancestral</div>
+                    <div class="text-xs text-sanctuary-sand/70 mt-1 uppercase tracking-wider">Authentic Lineage</div>
+                </div>
+                <div class="p-3">
+                    <div class="text-2xl font-serif text-sanctuary-gold font-bold">Integrity</div>
+                    <div class="text-xs text-sanctuary-sand/70 mt-1 uppercase tracking-wider">Honest Guidance</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVE VISITOR METRICS DASHBOARD BANNER (ADMIN QUICK VIEW) -->
+    <section class="py-6 bg-sanctuary-mahogany/90 border-y border-sanctuary-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                    <span class="w-3 h-3 rounded-full bg-emerald-500 animate-ping"></span>
+                    <span class="text-xs sm:text-sm font-semibold uppercase tracking-wider text-sanctuary-gold">
+                        Live Sanctuary Traffic Monitor
+                    </span>
+                </div>
+                <div class="grid grid-cols-3 gap-4 text-center text-xs">
+                    <div class="bg-sanctuary-darkBg/80 px-4 py-2 rounded-lg border border-sanctuary-gold/15">
+                        <span class="block text-sanctuary-sand/60">Active Now</span>
+                        <span class="font-bold text-emerald-400 text-sm" id="active-visitors-count">7 Visitors</span>
+                    </div>
+                    <div class="bg-sanctuary-darkBg/80 px-4 py-2 rounded-lg border border-sanctuary-gold/15">
+                        <span class="block text-sanctuary-sand/60">Today's Visits</span>
+                        <span class="font-bold text-sanctuary-gold text-sm" id="today-visits-count">142</span>
+                    </div>
+                    <div class="bg-sanctuary-darkBg/80 px-4 py-2 rounded-lg border border-sanctuary-gold/15">
+                        <span class="block text-sanctuary-sand/60">Top Regions</span>
+                        <span class="font-bold text-sanctuary-sand text-xs">UK • EU • UG</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT THE HEALER SECTION -->
+    <section id="about" class="py-20 bg-sanctuary-cardBg/60 border-y border-sanctuary-gold/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Visual Graphic / Representation -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none rounded-2xl overflow-hidden border-2 border-sanctuary-gold/30 bg-sanctuary-mahogany p-8 shadow-2xl text-center">
+                        <div class="w-32 h-32 mx-auto mb-6 rounded-full border-2 border-sanctuary-gold/60 bg-sanctuary-darkBg flex items-center justify-center text-5xl">
+                            🌿
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-sanctuary-gold mb-2">Elder Traditional Healer</h3>
+                        <p class="text-xs tracking-widest uppercase text-sanctuary-sand/60 mb-6">Lineage Practitioner | Kampala, Uganda</p>
+                        
+                        <div class="space-y-3 text-left text-sm text-sanctuary-sand/80 bg-sanctuary-darkBg/60 p-4 rounded-xl border border-sanctuary-gold/10">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-sanctuary-gold"></i>
+                                <span>Deeply rooted ancestral lineage</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-sanctuary-gold"></i>
+                                <span>Organic African Herbology Expert</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-check text-sanctuary-gold"></i>
+                                <span>Dedicated Remote Spiritual Diviner</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 pt-6 border-t border-sanctuary-gold/15 flex justify-center gap-4 text-xs text-sanctuary-sand/60">
+                            <span><i class="fa-solid fa-shield-halved text-emerald-400 mr-1"></i> Strictly Confidential</span>
+                            <span><i class="fa-solid fa-globe text-blue-400 mr-1"></i> Worldwide Reach</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Narrative Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div>
+                        <span class="text-sanctuary-gold text-xs font-semibold uppercase tracking-widest block mb-2">Our Philosophy & Lineage</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-sanctuary-sand leading-tight">
+                            Guiding Souls Back to Balance, Protection, and Spiritual Clarity
+                        </h2>
+                    </div>
+
+                    <p class="text-sanctuary-sand/80 leading-relaxed font-light">
+                        For generations, African traditional medicine and ancestral divination have provided solace, answers, and holistic healing when modern standard methods fall short. Based in Uganda, our sanctuary operates on the fundamental principles of absolute integrity, ancestral respect, and pure herbal knowledge.
+                    </p>
+
+                    <p class="text-sanctuary-sand/80 leading-relaxed font-light">
+                        Whether you are dealing with unexplained life barriers, career stagnation, relationship disharmony, or seek spiritual cleansing and shield, energy knows no geographical limits. Through sacred remote reading rituals and WhatsApp consultations, clients from London, Paris, Frankfurt, New York, Johannesburg, and Kampala receive equal access to ancient wisdom.
+                    </p>
+
+                    <!-- Core Pillars Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-sanctuary-darkBg border border-sanctuary-gold/15">
+                            <h4 class="font-serif text-sanctuary-gold font-semibold mb-1 flex items-center gap-2">
+                                <i class="fa-solid fa-shield"></i> Complete Privacy
+                            </h4>
+                            <p class="text-xs text-sanctuary-sand/70">Your identity and life matters are treated with 100% strict confidentiality.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-sanctuary-darkBg border border-sanctuary-gold/15">
+                            <h4 class="font-serif text-sanctuary-gold font-semibold mb-1 flex items-center gap-2">
+                                <i class="fa-solid fa-leaf"></i> Authentic Herbology
+                            </h4>
+                            <p class="text-xs text-sanctuary-sand/70">Using natural roots, bark, and sacred barks passed down through ancestral elders.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-sanctuary-darkBg border border-sanctuary-gold/15">
+                            <h4 class="font-serif text-sanctuary-gold font-semibold mb-1 flex items-center gap-2">
+                                <i class="fa-solid fa-eye"></i> Clear Divination
+                            </h4>
+                            <p class="text-xs text-sanctuary-sand/70">Uncover root causes of setback rather than treating surface symptoms alone.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-sanctuary-darkBg border border-sanctuary-gold/15">
+                            <h4 class="font-serif text-sanctuary-gold font-semibold mb-1 flex items-center gap-2">
+                                <i class="fa-solid fa-globe"></i> Global Accessibility
+                            </h4>
+                            <p class="text-xs text-sanctuary-sand/70">Convenient, structured audio/video sessions directly on WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-20 bg-sanctuary-darkBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-sanctuary-gold text-xs font-semibold uppercase tracking-widest block mb-2">Sacred Offerings</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-sanctuary-sand">Comprehensive Traditional & Spiritual Services</h2>
+                <div class="w-24 h-0.5 bg-sanctuary-gold/40 mx-auto mt-4"></div>
+                <p class="text-sanctuary-sand/70 text-sm sm:text-base mt-4">Each session is individually prepared using ancestral protocols, customized to your specific spiritual needs.</p>
+            </div>
+
+            <!-- Service Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-sanctuary-cardBg rounded-2xl p-8 border border-sanctuary-gold/20 hover:border-sanctuary-gold/60 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-sanctuary-mahogany border border-sanctuary-gold/30 flex items-center justify-center text-2xl text-sanctuary-gold mb-6 group-hover:scale-110 transition-transform">
+                            🔮
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-sanctuary-sand mb-3 group-hover:text-sanctuary-gold transition-colors">Ancestral Divination & Readings</h3>
+                        <p class="text-sanctuary-sand/70 text-sm leading-relaxed mb-6">
+                            Gain deep clarity regarding unexplained life hurdles, ancestral callings, or tough decision-making. Divination pinpoints spiritual obstacles accurately across distance.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/256774855463?text=Hello%2C%20I%20am%20interested%20in%20an%20Ancestral%20Divination%20Reading." 
+                       target="_blank" 
+                       class="inline-flex items-center gap-2 text-xs font-semibold text-sanctuary-gold hover:text-sanctuary-goldHover uppercase tracking-wider">
+                        <span>Book Reading</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-sanctuary-cardBg rounded-2xl p-8 border border-sanctuary-gold/20 hover:border-sanctuary-gold/60 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-sanctuary-mahogany border border-sanctuary-gold/30 flex items-center justify-center text-2xl text-sanctuary-gold mb-6 group-hover:scale-110 transition-transform">
+                            💼
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-sanctuary-sand mb-3 group-hover:text-sanctuary-gold transition-colors">Career & Business Breakthrough</h3>
+                        <p class="text-sanctuary-sand/70 text-sm leading-relaxed mb-6">
+                            Clear spiritual stagnation affecting your business endeavors, career promotions, or financial growth. Realign your path to attract prosperity and fair fruit for your labor.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/256774855463?text=Hello%2C%20I%20am%20interested%20in%20Career%20and%20Business%20Alignment." 
+                       target="_blank" 
+                       class="inline-flex items-center gap-2 text-xs font-semibold text-sanctuary-gold hover:text-sanctuary-goldHover uppercase tracking-wider">
+                        <span>Align Enterprise</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-sanctuary-cardBg rounded-2xl p-8 border border-sanctuary-gold/20 hover:border-sanctuary-gold/60 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-sanctuary-mahogany border border-sanctuary-gold/30 flex items-center justify-center text-2xl text-sanctuary-gold mb-6 group-hover:scale-110 transition-transform">
+                            🌿
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-sanctuary-sand mb-3 group-hover:text-sanctuary-gold transition-colors">Herbal Cleansing & Protection</h3>
+                        <p class="text-sanctuary-sand/70 text-sm leading-relaxed mb-6">
+                            Purify your aura and living space from heavy negative energies, bad omens, or envy. Receive spiritual shielding to protect your family and home from harm.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/256774855463?text=Hello%2C%20I%20need%20assistance%20with%20Herbal%20Cleansing%20and%20Protection." 
+                       target="_blank" 
+                       class="inline-flex items-center gap-2 text-xs font-semibold text-sanctuary-gold hover:text-sanctuary-goldHover uppercase tracking-wider">
+                        <span>Request Cleansing</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-sanctuary-cardBg rounded-2xl p-8 border border-sanctuary-gold/20 hover:border-sanctuary-gold/60 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-sanctuary-mahogany border border-sanctuary-gold/30 flex items-center justify-center text-2xl text-sanctuary-gold mb-6 group-hover:scale-110 transition-transform">
+                            🕊️
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-sanctuary-sand mb-3 group-hover:text-sanctuary-gold transition-colors">Relationship & Family Harmony</h3>
+                        <p class="text-sanctuary-sand/70 text-sm leading-relaxed mb-6">
+                            Restore warmth, mutual respect, and emotional alignment within broken marriages, family feuds, or personal partnerships facing constant turmoil.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/256774855463?text=Hello%2C%20I%20would%20like%20guidance%20on%20Relationship%20and%20Family%20Harmony." 
+                       target="_blank" 
+                       class="inline-flex items-center gap-2 text-xs font-semibold text-sanctuary-gold hover:text-sanctuary-goldHover uppercase tracking-wider">
+                        <span>Seek Harmony</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-sanctuary-cardBg rounded-2xl p-8 border border-sanctuary-gold/20 hover:border-sanctuary-gold/60 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-sanctuary-mahogany border border-sanctuary-gold/30 flex items-center justify-center text-2xl text-sanctuary-gold mb-6 group-hover:scale-110 transition-transform">
+                            ☀️
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-sanctuary-sand mb-3 group-hover:text-sanctuary-gold transition-colors">Removal of Unseen Setbacks</h3>
+                        <p class="text-sanctuary-sand/70 text-sm leading-relaxed mb-6">
+                            Break repetitive cycles of failure, unfulfilled promises, or spiritual heaviness that persist despite your hard work and best efforts.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/256774855463?text=Hello%2C%20I%20am%20seeking%20removal%20of%20persistent%20spiritual%20setbacks." 
+                       target="_blank" 
+                       class="inline-flex items-center gap-2 text-xs font-semibold text-sanctuary-gold hover:text-sanctuary-goldHover uppercase tracking-wider">
+                        <span>Break Barrier</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-sanctuary-cardBg rounded-2xl p-8 border border-sanctuary-gold/20 hover:border-sanctuary-gold/60 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-sanctuary-mahogany border border-sanctuary-gold/30 flex items-center justify-center text-2xl text-sanctuary-gold mb-6 group-hover:scale-110 transition-transform">
+                            📜
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-sanctuary-sand mb-3 group-hover:text-sanctuary-gold transition-colors">Custom Herbal Formulation</h3>
+                        <p class="text-sanctuary-sand/70 text-sm leading-relaxed mb-6">
+                            Tailored guidance on natural East African roots, barks, and oils specifically formulated based on your personal reading findings.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/256774855463?text=Hello%2C%20I%20want%20to%20inquire%20about%20Custom%20Herbal%20Formulations." 
+                       target="_blank" 
+                       class="inline-flex items-center gap-2 text-xs font-semibold text-sanctuary-gold hover:text-sanctuary-goldHover uppercase tracking-wider">
+                        <span>Inquire Remedies</span> <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW VIRTUAL HEALING WORKS -->
+    <section id="how-it-works" class="py-20 bg-sanctuary-cardBg/40 border-y border-sanctuary-gold/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-sanctuary-gold text-xs font-semibold uppercase tracking-widest block mb-2">Remote Accessibility</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-sanctuary-sand">How Remote Virtual Consultations Work</h2>
+                <div class="w-24 h-0.5 bg-sanctuary-gold/40 mx-auto mt-4"></div>
+                <p class="text-sanctuary-sand/70 text-sm sm:text-base mt-4">Spiritual energy and ancestral connections transcend physical borders. Here is your clear path to starting your healing journey from anywhere in the world.</p>
+            </div>
+
+            <!-- Steps Process -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+                
+                <!-- Step 1 -->
+                <div class="bg-sanctuary-darkBg p-6 rounded-2xl border border-sanctuary-gold/15 relative">
+                    <div class="w-10 h-10 rounded-full bg-sanctuary-gold text-sanctuary-darkBg font-bold flex items-center justify-center mb-4 text-base">1</div>
+                    <h3 class="font-serif text-lg font-bold text-sanctuary-sand mb-2">Private Contact</h3>
+                    <p class="text-xs text-sanctuary-sand/70 leading-relaxed">
+                        Send a direct message on WhatsApp with your name and brief note on what you need guidance with.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-sanctuary-darkBg p-6 rounded-2xl border border-sanctuary-gold/15 relative">
+                    <div class="w-10 h-10 rounded-full bg-sanctuary-gold text-sanctuary-darkBg font-bold flex items-center justify-center mb-4 text-base">2</div>
+                    <h3 class="font-serif text-lg font-bold text-sanctuary-sand mb-2">Session Schedule</h3>
+                    <p class="text-xs text-sanctuary-sand/70 leading-relaxed">
+                        Choose your preferred virtual format (WhatsApp Voice/Video or Text Chat) and confirm your convenient time slot.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-sanctuary-darkBg p-6 rounded-2xl border border-sanctuary-gold/15 relative">
+                    <div class="w-10 h-10 rounded-full bg-sanctuary-gold text-sanctuary-darkBg font-bold flex items-center justify-center mb-4 text-base">3</div>
+                    <h3 class="font-serif text-lg font-bold text-sanctuary-sand mb-2">Sacred Divination</h3>
+                    <p class="text-xs text-sanctuary-sand/70 leading-relaxed">
+                        The Healer conducts the reading, revealing root spiritual findings and presenting honest actionable steps.
+                    </p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-sanctuary-darkBg p-6 rounded-2xl border border-sanctuary-gold/15 relative">
+                    <div class="w-10 h-10 rounded-full bg-sanctuary-gold text-sanctuary-darkBg font-bold flex items-center justify-center mb-4 text-base">4</div>
+                    <h3 class="font-serif text-lg font-bold text-sanctuary-sand mb-2">Guidance & Support</h3>
+                    <p class="text-xs text-sanctuary-sand/70 leading-relaxed">
+                        Receive personalized spiritual instructions or herbal remedies with ongoing check-ins for complete peace.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Global Assurance banner -->
+            <div class="mt-12 p-6 rounded-2xl bg-sanctuary-mahogany/80 border border-sanctuary-gold/30 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-4">
+                    <div class="text-3xl text-sanctuary-gold">🌍</div>
+                    <div>
+                        <h4 class="font-serif text-base font-bold text-sanctuary-sand">Serving Clients Across All Continents</h4>
+                        <p class="text-xs text-sanctuary-sand/70">Flexible hours suited for UK (BST), European (CEST), North American (EST/PST), and African time zones.</p>
+                    </div>
+                </div>
+                <a href="https://wa.me/256774855463?text=Hello%20Elder%2C%20I%20would%20like%20to%20schedule%20a%20remote%20virtual%20session." 
+                   target="_blank" 
+                   class="whitespace-nowrap bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold px-6 py-3 rounded-xl transition-all">
+                    Start Virtual Chat <i class="fa-brands fa-whatsapp ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE CONSULTATION FEE ESTIMATOR & BOOKING CALCULATOR -->
+    <section id="calculator" class="py-20 bg-sanctuary-darkBg">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-sanctuary-gold text-xs font-semibold uppercase tracking-widest block mb-2">Transparent Booking</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-sanctuary-sand">Interactive Service Fee & Booking Estimator</h2>
+                <div class="w-24 h-0.5 bg-sanctuary-gold/40 mx-auto mt-4"></div>
+                <p class="text-sanctuary-sand/70 text-sm mt-4">Select your service preferences below to calculate an estimated contribution guide and instantly pre-fill your WhatsApp message.</p>
+            </div>
+
+            <!-- Calculator Card -->
+            <div class="bg-sanctuary-cardBg rounded-3xl p-6 sm:p-10 border border-sanctuary-gold/30 gold-border-glow shadow-2xl space-y-8">
+                
+                <!-- Currency Selector -->
+                <div>
+                    <label class="block text-xs font-semibold text-sanctuary-gold uppercase tracking-wider mb-3">1. Select Preferred Currency</label>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3" id="currency-selector">
+                        <button type="button" data-currency="USD" class="curr-btn active border border-sanctuary-gold bg-sanctuary-mahogany text-sanctuary-gold py-2.5 px-4 rounded-xl text-xs font-bold transition-all">USD ($)</button>
+                        <button type="button" data-currency="EUR" class="curr-btn border border-sanctuary-gold/20 bg-sanctuary-darkBg text-sanctuary-sand/70 py-2.5 px-4 rounded-xl text-xs font-bold hover:border-sanctuary-gold/50 transition-all">EUR (€)</button>
+                        <button type="button" data-currency="GBP" class="curr-btn border border-sanctuary-gold/20 bg-sanctuary-darkBg text-sanctuary-sand/70 py-2.5 px-4 rounded-xl text-xs font-bold hover:border-sanctuary-gold/50 transition-all">GBP (£)</button>
+                        <button type="button" data-currency="UGX" class="curr-btn border border-sanctuary-gold/20 bg-sanctuary-darkBg text-sanctuary-sand/70 py-2.5 px-4 rounded-xl text-xs font-bold hover:border-sanctuary-gold/50 transition-all">UGX (Shs)</button>
+                    </div>
+                </div>
+
+                <!-- Service Type Selection -->
+                <div>
+                    <label class="block text-xs font-semibold text-sanctuary-gold uppercase tracking-wider mb-3">2. Choose Primary Service Required</label>
+                    <select id="calc-service" class="w-full bg-sanctuary-darkBg text-sanctuary-sand border border-sanctuary-gold/30 rounded-xl p-4 text-sm focus:border-sanctuary-gold focus:outline-none transition-colors">
+                        <option value="divination" data-base="50">Ancestral Divination & General Spiritual Reading (45 Mins)</option>
+                        <option value="business" data-base="90">Career, Business & Financial Path Alignment</option>
+                        <option value="cleansing" data-base="110">Herbal Energy Cleansing & Spiritual Shielding</option>
+                        <option value="relationship" data-base="80">Relationship, Marriage & Family Harmony</option>
+                        <option value="unseen" data-base="120">Removal of Severe Unseen Spiritual Obstacles</option>
+                    </select>
+                </div>
+
+                <!-- Session Mode Selection -->
+                <div>
+                    <label class="block text-xs font-semibold text-sanctuary-gold uppercase tracking-wider mb-3">3. Preferred Session Mode</label>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <label class="flex items-center p-4 bg-sanctuary-darkBg rounded-xl border border-sanctuary-gold/30 cursor-pointer hover:border-sanctuary-gold transition-colors">
+                            <input type="radio" name="calc-mode" value="virtual" checked class="text-sanctuary-gold focus:ring-0">
+                            <div class="ml-3">
+                                <span class="block text-sm font-semibold text-sanctuary-sand">Virtual WhatsApp Call/Chat</span>
+                                <span class="block text-xs text-sanctuary-sand/60">Worldwide remote live consultation</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center p-4 bg-sanctuary-darkBg rounded-xl border border-sanctuary-gold/30 cursor-pointer hover:border-sanctuary-gold transition-colors">
+                            <input type="radio" name="calc-mode" value="inperson" class="text-sanctuary-gold focus:ring-0">
+                            <div class="ml-3">
+                                <span class="block text-sm font-semibold text-sanctuary-sand">In-Person Consultation</span>
+                                <span class="block text-xs text-sanctuary-sand/60">At Sanctuary in Uganda</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Live Estimated Output Display -->
+                <div class="p-6 bg-sanctuary-darkBg rounded-2xl border border-sanctuary-gold/40 text-center space-y-3">
+                    <div class="text-xs uppercase tracking-widest text-sanctuary-sand/60">Estimated Consultation Guide</div>
+                    <div class="font-serif text-4xl sm:text-5xl font-bold text-sanctuary-gold" id="calc-display-price">$50 USD</div>
+                    <div class="text-xs text-emerald-400 font-medium" id="calc-display-details">Includes 100% Confidentiality & Ancestral Preparation</div>
+                </div>
+
+                <!-- Dynamic WhatsApp Booking Button -->
+                <button type="button" id="confirm-booking-btn" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-3 shadow-xl transition-all">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    <span class="text-base">Confirm & Send Booking Request via WhatsApp</span>
+                </button>
+
+                <p class="text-center text-xs text-sanctuary-sand/50 italic">
+                    Note: Final ritual offerings or specific herbal preparation requirements (if applicable) are determined following initial divination.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-20 bg-sanctuary-cardBg/60 border-y border-sanctuary-gold/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-sanctuary-gold text-xs font-semibold uppercase tracking-widest block mb-2">Client Testimonials</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-sanctuary-sand">Stories of Restored Peace & Purpose</h2>
+                <div class="w-24 h-0.5 bg-sanctuary-gold/40 mx-auto mt-4"></div>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Story 1 -->
+                <div class="bg-sanctuary-darkBg p-8 rounded-2xl border border-sanctuary-gold/15 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-sanctuary-gold text-sm gap-1 mb-4">
+                            ★★★★★
+                        </div>
+                        <p class="text-sanctuary-sand/80 text-sm font-light italic leading-relaxed mb-6">
+                            "I was skeptical about a remote spiritual reading from London, but the accuracy regarding my family's hidden challenges left me amazed. The herbal protection guidance restored total calm to our household."
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-sanctuary-gold/10 flex items-center justify-between">
+                        <div>
+                            <div class="font-serif font-bold text-sanctuary-sand text-sm">Sarah M.</div>
+                            <div class="text-xs text-sanctuary-gold/70">London, United Kingdom</div>
+                        </div>
+                        <span class="text-xs bg-sanctuary-mahogany px-2.5 py-1 rounded-full border border-sanctuary-gold/20 text-sanctuary-sand/60">Virtual Session</span>
+                    </div>
+                </div>
+
+                <!-- Story 2 -->
+                <div class="bg-sanctuary-darkBg p-8 rounded-2xl border border-sanctuary-gold/15 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-sanctuary-gold text-sm gap-1 mb-4">
+                            ★★★★★
+                        </div>
+                        <p class="text-sanctuary-sand/80 text-sm font-light italic leading-relaxed mb-6">
+                            "My business was facing continuous financial barriers for over two years without clear reason. After an in-depth career reading and spiritual realignment, my enterprise opened up again."
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-sanctuary-gold/10 flex items-center justify-between">
+                        <div>
+                            <div class="font-serif font-bold text-sanctuary-sand text-sm">Kwame O.</div>
+                            <div class="text-xs text-sanctuary-gold/70">Kampala, Uganda</div>
+                        </div>
+                        <span class="text-xs bg-sanctuary-mahogany px-2.5 py-1 rounded-full border border-sanctuary-gold/20 text-sanctuary-sand/60">In-Person</span>
+                    </div>
+                </div>
+
+                <!-- Story 3 -->
+                <div class="bg-sanctuary-darkBg p-8 rounded-2xl border border-sanctuary-gold/15 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-sanctuary-gold text-sm gap-1 mb-4">
+                            ★★★★★
+                        </div>
+                        <p class="text-sanctuary-sand/80 text-sm font-light italic leading-relaxed mb-6">
+                            "Finding an authentic traditional practitioner who communicates clearly, respects dignity, and keeps everything strictly private is rare. The guidance I received gave me immense peace."
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-sanctuary-gold/10 flex items-center justify-between">
+                        <div>
+                            <div class="font-serif font-bold text-sanctuary-sand text-sm">David V.</div>
+                            <div class="text-xs text-sanctuary-gold/70">Amsterdam, Netherlands</div>
+                        </div>
+                        <span class="text-xs bg-sanctuary-mahogany px-2.5 py-1 rounded-full border border-sanctuary-gold/20 text-sanctuary-sand/60">Virtual Call</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTIONS (ACCORDION) -->
+    <section id="faq" class="py-20 bg-sanctuary-darkBg">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-sanctuary-gold text-xs font-semibold uppercase tracking-widest block mb-2">Clarity & Understanding</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-sanctuary-sand">Frequently Asked Questions</h2>
+                <div class="w-24 h-0.5 bg-sanctuary-gold/40 mx-auto mt-4"></div>
+            </div>
+
+            <div class="space-y-4" id="faq-accordion">
+                
+                <!-- FAQ 1 -->
+                <div class="bg-sanctuary-cardBg border border-sanctuary-gold/20 rounded-2xl overflow-hidden">
+                    <button type="button" class="faq-btn w-full p-6 text-left font-serif font-bold text-sanctuary-sand flex items-center justify-between focus:outline-none">
+                        <span>How can traditional African healing work remotely across long distances?</span>
+                        <i class="fa-solid fa-chevron-down text-sanctuary-gold transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-xs sm:text-sm text-sanctuary-sand/70 font-light leading-relaxed border-t border-sanctuary-gold/10 pt-4">
+                        Spiritual energy and ancestral connections operate beyond physical space and geographical boundaries. During a virtual divination, the Healer connects with your spiritual name and energy line just as effectively as during an in-person session.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-sanctuary-cardBg border border-sanctuary-gold/20 rounded-2xl overflow-hidden">
+                    <button type="button" class="faq-btn w-full p-6 text-left font-serif font-bold text-sanctuary-sand flex items-center justify-between focus:outline-none">
+                        <span>Is my consultation kept strictly private and confidential?</span>
+                        <i class="fa-solid fa-chevron-down text-sanctuary-gold transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-xs sm:text-sm text-sanctuary-sand/70 font-light leading-relaxed border-t border-sanctuary-gold/10 pt-4">
+                        Yes, 100%. Every consultation, identity details, and shared personal situation remain completely private between you and the Healer. We adhere to sacred confidentiality oaths.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-sanctuary-cardBg border border-sanctuary-gold/20 rounded-2xl overflow-hidden">
+                    <button type="button" class="faq-btn w-full p-6 text-left font-serif font-bold text-sanctuary-sand flex items-center justify-between focus:outline-none">
+                        <span>How are consultation contributions or fees handled?</span>
+                        <i class="fa-solid fa-chevron-down text-sanctuary-gold transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-xs sm:text-sm text-sanctuary-sand/70 font-light leading-relaxed border-t border-sanctuary-gold/10 pt-4">
+                        For international clients in Europe, Diaspora, or globally, secure international transfer options (such as Remitly, WorldRemit, Western Union, or Direct Bank Transfer) are accepted. Local Uganda clients can contribute via Mobile Money (MTN / Airtel). Details are provided directly via WhatsApp.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-sanctuary-cardBg border border-sanctuary-gold/20 rounded-2xl overflow-hidden">
+                    <button type="button" class="faq-btn w-full p-6 text-left font-serif font-bold text-sanctuary-sand flex items-center justify-between focus:outline-none">
+                        <span>How should I prepare for my first consultation?</span>
+                        <i class="fa-solid fa-chevron-down text-sanctuary-gold transition-transform"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-xs sm:text-sm text-sanctuary-sand/70 font-light leading-relaxed border-t border-sanctuary-gold/10 pt-4">
+                        Find a quiet space where you will not be interrupted for 45 minutes. Prepare a list of clear questions or specific areas of concern regarding your life, career, or family, and approach the session with an open heart.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- DIRECT CONTACT & WHATSAPP QUICK CONNECT BANNER -->
+    <section class="py-16 bg-gradient-to-r from-sanctuary-mahogany via-sanctuary-cardBg to-sanctuary-mahogany border-t border-sanctuary-gold/20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-sanctuary-sand">Ready to Reclaim Your Peace and Purpose?</h2>
+            <p class="text-sanctuary-sand/80 max-w-2xl mx-auto text-sm sm:text-base font-light">
+                Do not suffer in silence with unexplainable barriers. Connect directly with the Traditional Healer on WhatsApp today for immediate confidential assistance.
+            </p>
+            
+            <div class="inline-flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="https://wa.me/256774855463?text=Hello%2C%20I%20am%20ready%20to%20book%20my%20spiritual%20consultation." 
+                   target="_blank"
+                   class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 py-4 rounded-xl text-base flex items-center gap-3 shadow-xl transition-all">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    <span>Chat Directly on WhatsApp: +256774855463</span>
+                </a>
+            </div>
+            
+            <div class="text-xs text-sanctuary-gold/80 tracking-wider uppercase pt-2">
+                Available 24 Hours a Day • Confidential Global Support
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-sanctuary-darkBg border-t border-sanctuary-gold/15 py-12 text-xs text-sanctuary-sand/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-3">
+                    <span class="text-xl">🌿</span>
+                    <div>
+                        <div class="font-serif font-bold text-sanctuary-sand text-sm">Ancestral Healing Sanctuary</div>
+                        <div>Authentic Traditional & Remote Guidance • Uganda & Worldwide</div>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-6 text-sanctuary-sand/80">
+                    <a href="#about" class="hover:text-sanctuary-gold">About</a>
+                    <a href="#services" class="hover:text-sanctuary-gold">Services</a>
+                    <a href="#calculator" class="hover:text-sanctuary-gold">Estimator</a>
+                    <a href="#faq" class="hover:text-sanctuary-gold">FAQ</a>
+                </div>
+            </div>
+
+            <div class="border-t border-sanctuary-gold/10 pt-6 text-center space-y-2">
+                <p>© 2026 Ancestral Healing Sanctuary. All rights reserved.</p>
+                <p class="max-w-3xl mx-auto text-[10px] text-sanctuary-sand/40">
+                    Disclaimer: Traditional healing and ancestral divination services are spiritual and complementary practices meant to provide spiritual alignment, peace, and cultural clarity. They do not replace registered professional medical or legal services.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ANCHORED FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/256774855463?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20a%20confidential%20consultation." 
+       target="_blank" 
+       title="Chat on WhatsApp"
+       class="floating-wa fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-400 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- INTERACTIVE JAVASCRIPT LOGIC -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Navigation Menu Toggle
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+
+            // FAQ Accordion Logic
+            const faqBtns = document.querySelectorAll('.faq-btn');
+            faqBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const content = btn.nextElementSibling;
+                    const icon = btn.querySelector('i');
+                    
+                    // Close other open panels
+                    document.querySelectorAll('.faq-content').forEach(item => {
+                        if (item !== content) {
+                            item.classList.add('hidden');
+                            if (item.previousElementSibling) {
+                                item.previousElementSibling.querySelector('i').style.transform = 'rotate(0deg)';
+                            }
+                        }
+                    });
+
+                    // Toggle current panel
+                    content.classList.toggle('hidden');
+                    if (content.classList.contains('hidden')) {
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+
+            // Interactive Calculator Logic
+            const currencyBtns = document.querySelectorAll('.curr-btn');
+            const serviceSelect = document.getElementById('calc-service');
+            const displayPrice = document.getElementById('calc-display-price');
+            const confirmBtn = document.getElementById('confirm-booking-btn');
+
+            let selectedCurrency = 'USD';
+
+            const rates = {
+                USD: { symbol: '$', rate: 1, label: 'USD' },
+                EUR: { symbol: '€', rate: 0.92, label: 'EUR' },
+                GBP: { symbol: '£', rate: 0.78, label: 'GBP' },
+                UGX: { symbol: 'UGX ', rate: 3750, label: 'UGX' }
+            };
+
+            function updateCalculator() {
+                const selectedOption = serviceSelect.options[serviceSelect.selectedIndex];
+                const baseUSD = parseFloat(selectedOption.getAttribute('data-base')) || 50;
+                
+                const currInfo = rates[selectedCurrency];
+                const converted = Math.round(baseUSD * currInfo.rate);
+
+                let formatted = '';
+                if (selectedCurrency === 'UGX') {
+                    formatted = currInfo.symbol + converted.toLocaleString();
+                } else {
+                    formatted = currInfo.symbol + converted + ' ' + currInfo.label;
+                }
+
+                displayPrice.innerText = formatted;
+
+                // Update WhatsApp Message Link
+                const serviceName = selectedOption.text;
+                const modeVal = document.querySelector('input[name="calc-mode"]:checked').value;
+                const modeText = modeVal === 'virtual' ? 'Virtual WhatsApp Consultation' : 'In-Person Sanctuary Consultation';
+
+                const waMessage = `Hello, I would like to book a consultation:\n- Service: ${serviceName}\n- Session Mode: ${modeText}\n- Estimated Guide: ${formatted}`;
+                
+                confirmBtn.onclick = function() {
+                    const encodedMsg = encodeURIComponent(waMessage);
+                    window.open(`https://wa.me/256774855463?text=${encodedMsg}`, '_blank');
+                };
+            }
+
+            // Currency Button Switching
+            currencyBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    currencyBtns.forEach(b => {
+                        b.classList.remove('active', 'border-sanctuary-gold', 'bg-sanctuary-mahogany', 'text-sanctuary-gold');
+                        b.classList.add('border-sanctuary-gold/20', 'bg-sanctuary-darkBg', 'text-sanctuary-sand/70');
+                    });
+                    this.classList.add('active', 'border-sanctuary-gold', 'bg-sanctuary-mahogany', 'text-sanctuary-gold');
+                    this.classList.remove('border-sanctuary-gold/20', 'bg-sanctuary-darkBg', 'text-sanctuary-sand/70');
+
+                    selectedCurrency = this.getAttribute('data-currency');
+                    updateCalculator();
+                });
+            });
+
+            // Listen for selection changes
+            if (serviceSelect) {
+                serviceSelect.addEventListener('change', updateCalculator);
+            }
+
+            document.querySelectorAll('input[name="calc-mode"]').forEach(radio => {
+                radio.addEventListener('change', updateCalculator);
+            });
+
+            // Initial calculation run
+            updateCalculator();
+
+            // Track all WhatsApp links automatically for Google Analytics
+            document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+                link.addEventListener('click', function() {
+                    if (typeof trackWhatsAppClick === 'function') {
+                        trackWhatsAppClick(this.getAttribute('href') || 'WhatsApp Click');
+                    }
+                });
+            });
+
+            // Simulated Visitor Metrics Updates (for visual verification)
+            setInterval(() => {
+                const activeElem = document.getElementById('active-visitors-count');
+                if (activeElem) {
+                    const current = parseInt(activeElem.innerText) || 7;
+                    const change = Math.floor(Math.random() * 3) - 1; // -1, 0, or +1
+                    const updated = Math.max(4, current + change);
+                    activeElem.innerText = `${updated} Visitors`;
+                }
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
